@@ -1,0 +1,4 @@
+Model,Training MAE (°C),Test MAE (°C),Ratio,Cross-validated MAE (°C),Selected hyperparameters
+Multiple Linear Regression,0.415,0.421,1.01,0.600,none (no free hyperparameters)
+Random Forest,0.226,0.476,2.11,0.498,"max_depth = 6, max_features = sqrt, min_samples_leaf = 1, n_estimators = 300"
+Multilayer Perceptron,0.304,0.415,1.37,0.681,"alpha = 1.0, hidden_layer_sizes = (16,), learning_rate_init = 0.01"

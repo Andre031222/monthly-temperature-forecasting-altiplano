@@ -1,0 +1,526 @@
+{
+  "design": {
+    "source": "NASA POWER / MERRA-2",
+    "stations_used": [
+      "Ayaviri",
+      "Azangaro",
+      "Crucero",
+      "Crucero_Alto",
+      "Desaguadero",
+      "Juli",
+      "Juliaca",
+      "Lampa",
+      "Macusani",
+      "Mazocruz",
+      "Puno"
+    ],
+    "excluded_as_duplicates": [
+      "Cojata",
+      "Yunguyo"
+    ],
+    "train_period": "2000-01 .. 2018-12-31",
+    "test_period": "2019-01 .. 2024-12"
+  },
+  "per_station": {
+    "Ayaviri": {
+      "n_train": 225,
+      "n_test": 72,
+      "Climatology": {
+        "MAE": 0.6038,
+        "RMSE": 0.773,
+        "R2": 0.5791
+      },
+      "Persistence": {
+        "MAE": 0.64,
+        "RMSE": 0.7986,
+        "R2": 0.5506
+      },
+      "Multiple Linear Regression": {
+        "MAE": 0.402,
+        "RMSE": 0.5206,
+        "R2": 0.809
+      },
+      "Random Forest": {
+        "MAE": 0.4887,
+        "RMSE": 0.6287,
+        "R2": 0.7216
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.4031,
+        "RMSE": 0.5215,
+        "R2": 0.8084
+      }
+    },
+    "Azangaro": {
+      "n_train": 225,
+      "n_test": 72,
+      "Climatology": {
+        "MAE": 0.5826,
+        "RMSE": 0.7438,
+        "R2": 0.796
+      },
+      "Persistence": {
+        "MAE": 0.8726,
+        "RMSE": 1.1045,
+        "R2": 0.5502
+      },
+      "Multiple Linear Regression": {
+        "MAE": 0.4411,
+        "RMSE": 0.5732,
+        "R2": 0.8789
+      },
+      "Random Forest": {
+        "MAE": 0.4728,
+        "RMSE": 0.6342,
+        "R2": 0.8517
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.4439,
+        "RMSE": 0.594,
+        "R2": 0.8699
+      }
+    },
+    "Crucero": {
+      "n_train": 225,
+      "n_test": 72,
+      "Climatology": {
+        "MAE": 0.5929,
+        "RMSE": 0.7638,
+        "R2": 0.4872
+      },
+      "Persistence": {
+        "MAE": 0.6136,
+        "RMSE": 0.783,
+        "R2": 0.4611
+      },
+      "Multiple Linear Regression": {
+        "MAE": 0.4475,
+        "RMSE": 0.5621,
+        "R2": 0.7222
+      },
+      "Random Forest": {
+        "MAE": 0.4693,
+        "RMSE": 0.6047,
+        "R2": 0.6786
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.4535,
+        "RMSE": 0.5764,
+        "R2": 0.7079
+      }
+    },
+    "Crucero_Alto": {
+      "n_train": 225,
+      "n_test": 72,
+      "Climatology": {
+        "MAE": 0.732,
+        "RMSE": 0.9157,
+        "R2": 0.7231
+      },
+      "Persistence": {
+        "MAE": 0.9023,
+        "RMSE": 1.1288,
+        "R2": 0.5792
+      },
+      "Multiple Linear Regression": {
+        "MAE": 0.4897,
+        "RMSE": 0.6398,
+        "R2": 0.8648
+      },
+      "Random Forest": {
+        "MAE": 0.5826,
+        "RMSE": 0.7202,
+        "R2": 0.8287
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.5092,
+        "RMSE": 0.6681,
+        "R2": 0.8526
+      }
+    },
+    "Desaguadero": {
+      "n_train": 225,
+      "n_test": 72,
+      "Climatology": {
+        "MAE": 0.7288,
+        "RMSE": 0.8957,
+        "R2": 0.633
+      },
+      "Persistence": {
+        "MAE": 0.8026,
+        "RMSE": 0.9984,
+        "R2": 0.5439
+      },
+      "Multiple Linear Regression": {
+        "MAE": 0.5028,
+        "RMSE": 0.6412,
+        "R2": 0.8119
+      },
+      "Random Forest": {
+        "MAE": 0.5951,
+        "RMSE": 0.7549,
+        "R2": 0.7392
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.5366,
+        "RMSE": 0.7182,
+        "R2": 0.764
+      }
+    },
+    "Juli": {
+      "n_train": 225,
+      "n_test": 72,
+      "Climatology": {
+        "MAE": 0.6551,
+        "RMSE": 0.8205,
+        "R2": 0.3502
+      },
+      "Persistence": {
+        "MAE": 0.5971,
+        "RMSE": 0.7447,
+        "R2": 0.4648
+      },
+      "Multiple Linear Regression": {
+        "MAE": 0.4157,
+        "RMSE": 0.5402,
+        "R2": 0.7184
+      },
+      "Random Forest": {
+        "MAE": 0.4685,
+        "RMSE": 0.6162,
+        "R2": 0.6335
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.4276,
+        "RMSE": 0.5688,
+        "R2": 0.6877
+      }
+    },
+    "Juliaca": {
+      "n_train": 225,
+      "n_test": 72,
+      "Climatology": {
+        "MAE": 0.5949,
+        "RMSE": 0.7723,
+        "R2": 0.7671
+      },
+      "Persistence": {
+        "MAE": 0.8685,
+        "RMSE": 1.0703,
+        "R2": 0.5528
+      },
+      "Multiple Linear Regression": {
+        "MAE": 0.4227,
+        "RMSE": 0.551,
+        "R2": 0.8815
+      },
+      "Random Forest": {
+        "MAE": 0.4515,
+        "RMSE": 0.6043,
+        "R2": 0.8575
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.4364,
+        "RMSE": 0.5778,
+        "R2": 0.8697
+      }
+    },
+    "Lampa": {
+      "n_train": 225,
+      "n_test": 72,
+      "Climatology": {
+        "MAE": 0.6143,
+        "RMSE": 0.8243,
+        "R2": 0.7687
+      },
+      "Persistence": {
+        "MAE": 0.8976,
+        "RMSE": 1.0972,
+        "R2": 0.5901
+      },
+      "Multiple Linear Regression": {
+        "MAE": 0.4122,
+        "RMSE": 0.5583,
+        "R2": 0.8939
+      },
+      "Random Forest": {
+        "MAE": 0.4757,
+        "RMSE": 0.6127,
+        "R2": 0.8722
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.4191,
+        "RMSE": 0.5548,
+        "R2": 0.8952
+      }
+    },
+    "Macusani": {
+      "n_train": 225,
+      "n_test": 72,
+      "Climatology": {
+        "MAE": 0.5779,
+        "RMSE": 0.7522,
+        "R2": 0.1757
+      },
+      "Persistence": {
+        "MAE": 0.5056,
+        "RMSE": 0.6445,
+        "R2": 0.3948
+      },
+      "Multiple Linear Regression": {
+        "MAE": 0.3677,
+        "RMSE": 0.5079,
+        "R2": 0.6241
+      },
+      "Random Forest": {
+        "MAE": 0.4392,
+        "RMSE": 0.5614,
+        "R2": 0.5408
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.3533,
+        "RMSE": 0.4705,
+        "R2": 0.6775
+      }
+    },
+    "Mazocruz": {
+      "n_train": 225,
+      "n_test": 72,
+      "Climatology": {
+        "MAE": 0.725,
+        "RMSE": 0.905,
+        "R2": 0.7281
+      },
+      "Persistence": {
+        "MAE": 0.8996,
+        "RMSE": 1.1303,
+        "R2": 0.5758
+      },
+      "Multiple Linear Regression": {
+        "MAE": 0.4939,
+        "RMSE": 0.6427,
+        "R2": 0.8629
+      },
+      "Random Forest": {
+        "MAE": 0.5675,
+        "RMSE": 0.6983,
+        "R2": 0.8381
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.4688,
+        "RMSE": 0.6166,
+        "R2": 0.8738
+      }
+    },
+    "Puno": {
+      "n_train": 225,
+      "n_test": 72,
+      "Climatology": {
+        "MAE": 0.6384,
+        "RMSE": 0.8266,
+        "R2": 0.7174
+      },
+      "Persistence": {
+        "MAE": 0.8339,
+        "RMSE": 1.038,
+        "R2": 0.5544
+      },
+      "Multiple Linear Regression": {
+        "MAE": 0.4383,
+        "RMSE": 0.5717,
+        "R2": 0.8648
+      },
+      "Random Forest": {
+        "MAE": 0.481,
+        "RMSE": 0.6248,
+        "R2": 0.8385
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.4452,
+        "RMSE": 0.5827,
+        "R2": 0.8596
+      }
+    }
+  },
+  "pooled": {
+    "n_train": 2475,
+    "n_test": 792,
+    "Climatology": {
+      "MAE": 0.6405,
+      "RMSE": 0.8198,
+      "R2": 0.8554
+    },
+    "Persistence": {
+      "MAE": 0.7667,
+      "RMSE": 0.9731,
+      "R2": 0.7962
+    },
+    "Multiple Linear Regression": {
+      "MAE": 0.4375,
+      "RMSE": 0.5736,
+      "R2": 0.9292
+    },
+    "Random Forest": {
+      "MAE": 0.4741,
+      "RMSE": 0.6179,
+      "R2": 0.9178
+    },
+    "Multilayer Perceptron": {
+      "MAE": 0.4529,
+      "RMSE": 0.5856,
+      "R2": 0.9262
+    }
+  },
+  "pooled_learning_curve": {
+    "Multiple Linear Regression": [
+      {
+        "n_train": 100,
+        "MAE": 0.547,
+        "sd": 0.0
+      },
+      {
+        "n_train": 200,
+        "MAE": 0.4468,
+        "sd": 0.0
+      },
+      {
+        "n_train": 400,
+        "MAE": 0.4603,
+        "sd": 0.0
+      },
+      {
+        "n_train": 700,
+        "MAE": 0.4242,
+        "sd": 0.0
+      },
+      {
+        "n_train": 1000,
+        "MAE": 0.4335,
+        "sd": 0.0
+      },
+      {
+        "n_train": 1400,
+        "MAE": 0.4303,
+        "sd": 0.0
+      },
+      {
+        "n_train": 1800,
+        "MAE": 0.4364,
+        "sd": 0.0
+      },
+      {
+        "n_train": 2475,
+        "MAE": 0.4375,
+        "sd": 0.0
+      }
+    ],
+    "Random Forest": [
+      {
+        "n_train": 100,
+        "MAE": 0.5798,
+        "sd": 0.0235
+      },
+      {
+        "n_train": 200,
+        "MAE": 0.5656,
+        "sd": 0.0241
+      },
+      {
+        "n_train": 400,
+        "MAE": 0.5178,
+        "sd": 0.0096
+      },
+      {
+        "n_train": 700,
+        "MAE": 0.4985,
+        "sd": 0.0082
+      },
+      {
+        "n_train": 1000,
+        "MAE": 0.4892,
+        "sd": 0.0028
+      },
+      {
+        "n_train": 1400,
+        "MAE": 0.4816,
+        "sd": 0.007
+      },
+      {
+        "n_train": 1800,
+        "MAE": 0.4795,
+        "sd": 0.003
+      },
+      {
+        "n_train": 2475,
+        "MAE": 0.477,
+        "sd": 0.0002
+      }
+    ],
+    "Multilayer Perceptron": [
+      {
+        "n_train": 100,
+        "MAE": 0.5999,
+        "sd": 0.0454
+      },
+      {
+        "n_train": 200,
+        "MAE": 0.554,
+        "sd": 0.0585
+      },
+      {
+        "n_train": 400,
+        "MAE": 0.4642,
+        "sd": 0.0185
+      },
+      {
+        "n_train": 700,
+        "MAE": 0.4556,
+        "sd": 0.0117
+      },
+      {
+        "n_train": 1000,
+        "MAE": 0.4797,
+        "sd": 0.0374
+      },
+      {
+        "n_train": 1400,
+        "MAE": 0.4731,
+        "sd": 0.0377
+      },
+      {
+        "n_train": 1800,
+        "MAE": 0.4739,
+        "sd": 0.0438
+      },
+      {
+        "n_train": 2475,
+        "MAE": 0.4673,
+        "sd": 0.0315
+      }
+    ]
+  },
+  "pooled_seed_stability": {
+    "Multiple Linear Regression": {
+      "MAE": 0.4375,
+      "deterministic": true
+    },
+    "Random Forest": {
+      "n_seeds": 20,
+      "mean_MAE": 0.4777,
+      "sd_MAE": 0.002,
+      "min_MAE": 0.4746,
+      "max_MAE": 0.4828,
+      "seeds_beating_linear": 0,
+      "share_beating_linear": 0.0
+    },
+    "Multilayer Perceptron": {
+      "n_seeds": 20,
+      "mean_MAE": 0.5101,
+      "sd_MAE": 0.0454,
+      "min_MAE": 0.4251,
+      "max_MAE": 0.6015,
+      "seeds_beating_linear": 2,
+      "share_beating_linear": 0.1
+    }
+  }
+}

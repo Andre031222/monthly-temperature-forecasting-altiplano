@@ -1,0 +1,111 @@
+{
+  "midpoint_estimator": {
+    "n_days_with_both": 6499,
+    "mean_bias_C": -0.6869,
+    "sd_of_error_C": 0.8492,
+    "mae_C": 0.8671,
+    "rmse_C": 1.0921,
+    "pearson_r": 0.901,
+    "r_squared": 0.8118,
+    "paired_t_stat": -65.209,
+    "paired_p_value": 0.0,
+    "p95_abs_error_C": 2.2,
+    "days_recovered": 606,
+    "tmean_missing_before": 780,
+    "tmean_missing_after": 174
+  },
+  "wmo_rule": {
+    "n_months_total": 264,
+    "n_months_valid": 236,
+    "n_months_rejected": 28,
+    "pct_valid": 89.39,
+    "n_months_rejected_due_to_absent_block": 26,
+    "n_months_rejected_partial": 2
+  },
+  "final_monthly_series": {
+    "n_months_with_tmean": 236,
+    "span": "2003-01-01 00:00:00 .. 2024-12-01 00:00:00",
+    "mean_C": 10.667,
+    "sd_C": 1.585,
+    "min_C": 6.59,
+    "max_C": 14.082,
+    "share_of_days_reconstructed_pct": 8.4
+  },
+  "climatology": {
+    "1": {
+      "mean": 11.385,
+      "std": 0.664,
+      "count": 20
+    },
+    "2": {
+      "mean": 11.298,
+      "std": 0.498,
+      "count": 19
+    },
+    "3": {
+      "mean": 11.256,
+      "std": 0.712,
+      "count": 20
+    },
+    "4": {
+      "mean": 10.825,
+      "std": 0.65,
+      "count": 19
+    },
+    "5": {
+      "mean": 9.599,
+      "std": 0.751,
+      "count": 19
+    },
+    "6": {
+      "mean": 8.342,
+      "std": 0.937,
+      "count": 19
+    },
+    "7": {
+      "mean": 8.169,
+      "std": 0.693,
+      "count": 19
+    },
+    "8": {
+      "mean": 9.29,
+      "std": 0.685,
+      "count": 21
+    },
+    "9": {
+      "mean": 10.767,
+      "std": 0.83,
+      "count": 21
+    },
+    "10": {
+      "mean": 11.997,
+      "std": 0.768,
+      "count": 20
+    },
+    "11": {
+      "mean": 12.735,
+      "std": 0.647,
+      "count": 18
+    },
+    "12": {
+      "mean": 12.271,
+      "std": 0.688,
+      "count": 21
+    }
+  },
+  "linear_trend": {
+    "slope_C_per_month": 0.004505,
+    "slope_C_per_decade": 0.5406,
+    "p_value": 0.0014101401885248618,
+    "std_err": 0.001394,
+    "significant_at_0.05": true
+  },
+  "autocorrelation": {
+    "lag_1": 0.755,
+    "lag_2": 0.361,
+    "lag_3": -0.06,
+    "lag_6": -0.501,
+    "lag_12": 0.873,
+    "lag_24": 0.842
+  }
+}

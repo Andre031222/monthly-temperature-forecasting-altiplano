@@ -1,0 +1,138 @@
+{
+  "Puno": {
+    "latitude": -15.84,
+    "longitude": -70.02,
+    "elevation_m": 3825,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 8.031
+  },
+  "Juliaca": {
+    "latitude": -15.49,
+    "longitude": -70.13,
+    "elevation_m": 3824,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 9.44
+  },
+  "Azangaro": {
+    "latitude": -14.89,
+    "longitude": -70.1,
+    "elevation_m": 3859,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 7.84
+  },
+  "Ayaviri": {
+    "latitude": -15.25,
+    "longitude": -69.29,
+    "elevation_m": 3918,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 5.447
+  },
+  "Macusani": {
+    "latitude": -14.08333,
+    "longitude": -70.43333,
+    "elevation_m": 4345,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 4.588
+  },
+  "Mazocruz": {
+    "latitude": -16.7425,
+    "longitude": -69.71611,
+    "elevation_m": 3990,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 5.677
+  },
+  "Lampa": {
+    "latitude": -15.35,
+    "longitude": -70.36667,
+    "elevation_m": 3872,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 5.959
+  },
+  "Yunguyo": {
+    "latitude": -16.25,
+    "longitude": -69.08333,
+    "elevation_m": 3826,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 9.111
+  },
+  "Juli": {
+    "latitude": -16.21667,
+    "longitude": -69.45,
+    "elevation_m": 3812,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 9.111
+  },
+  "Desaguadero": {
+    "latitude": -16.56556,
+    "longitude": -69.04167,
+    "elevation_m": 3808,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 7.854
+  },
+  "Cojata": {
+    "latitude": -15.02,
+    "longitude": -69.37,
+    "elevation_m": 4320,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 5.447
+  },
+  "Crucero": {
+    "latitude": -14.34538,
+    "longitude": -70.0321,
+    "elevation_m": 4130,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 5.284
+  },
+  "Crucero_Alto": {
+    "latitude": -15.77948,
+    "longitude": -70.91799,
+    "elevation_m": 4470,
+    "rows": 9132,
+    "start": "2000-01-01",
+    "end": "2024-12-31",
+    "missing_tmean": 0,
+    "mean_tmean_C": 5.865
+  },
+  "_summary": {
+    "stations": 13,
+    "total_rows": 118716,
+    "period": "20000101 .. 20241231",
+    "source": "NASA POWER / MERRA-2, https://power.larc.nasa.gov"
+  }
+}

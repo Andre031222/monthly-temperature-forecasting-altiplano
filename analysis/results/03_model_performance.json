@@ -1,0 +1,338 @@
+{
+  "design": {
+    "task": "one-month-ahead forecast of monthly mean temperature",
+    "n_train": 137,
+    "n_test": 49,
+    "train_span": "2003-04-01 .. 2016-12-01",
+    "test_span": "2017-01-01 .. 2024-11-01",
+    "predictors": [
+      "tmean_lag0",
+      "tmean_lag1",
+      "tmean_lag2",
+      "dtr_lag0",
+      "rh_lag0",
+      "precip_lag0",
+      "roll3",
+      "clim_target",
+      "anomaly_lag0",
+      "sin_month",
+      "cos_month",
+      "trend"
+    ],
+    "cv": "TimeSeriesSplit(n_splits=5) on the training period"
+  },
+  "tuning": {
+    "Multiple Linear Regression": {
+      "best_params": {},
+      "cv_mae_C": 0.5996,
+      "n_candidates": 1
+    },
+    "Random Forest": {
+      "best_params": {
+        "model__max_depth": "6",
+        "model__max_features": "sqrt",
+        "model__min_samples_leaf": "1",
+        "model__n_estimators": "300"
+      },
+      "cv_mae_C": 0.4984,
+      "n_candidates": 54
+    },
+    "Multilayer Perceptron": {
+      "best_params": {
+        "model__alpha": "1.0",
+        "model__hidden_layer_sizes": "(16,)",
+        "model__learning_rate_init": "0.01"
+      },
+      "cv_mae_C": 0.6807,
+      "n_candidates": 32
+    }
+  },
+  "performance": {
+    "Climatology": {
+      "test": {
+        "MAE": 0.5968,
+        "RMSE": 0.7566,
+        "R2": 0.7549,
+        "MBE": -0.2711
+      },
+      "train": {
+        "MAE": 0.4851,
+        "RMSE": 0.6167,
+        "R2": 0.8586,
+        "MBE": 0.0222
+      },
+      "skill_vs_climatology": 0.0,
+      "mae_ci95": [
+        0.4783,
+        0.7279
+      ],
+      "rmse_ci95": [
+        0.5791,
+        0.9259
+      ]
+    },
+    "Persistence": {
+      "test": {
+        "MAE": 0.8657,
+        "RMSE": 1.0587,
+        "R2": 0.5202,
+        "MBE": -0.0881
+      },
+      "train": {
+        "MAE": 1.0099,
+        "RMSE": 1.1875,
+        "R2": 0.4757,
+        "MBE": -0.0664
+      },
+      "skill_vs_climatology": -0.9578,
+      "mae_ci95": [
+        0.7005,
+        1.0412
+      ],
+      "rmse_ci95": [
+        0.8901,
+        1.2183
+      ],
+      "diebold_mariano_vs_climatology": {
+        "statistic": 3.057,
+        "p_value": 0.00365,
+        "better_than_climatology": false
+      }
+    },
+    "Multiple Linear Regression": {
+      "test": {
+        "MAE": 0.4208,
+        "RMSE": 0.5323,
+        "R2": 0.8787,
+        "MBE": 0.1069
+      },
+      "train": {
+        "MAE": 0.4152,
+        "RMSE": 0.5227,
+        "R2": 0.8984,
+        "MBE": 0.0
+      },
+      "skill_vs_climatology": 0.505,
+      "mae_ci95": [
+        0.3312,
+        0.5118
+      ],
+      "rmse_ci95": [
+        0.4223,
+        0.6323
+      ],
+      "diebold_mariano_vs_climatology": {
+        "statistic": -2.255,
+        "p_value": 0.02872,
+        "better_than_climatology": true
+      }
+    },
+    "Random Forest": {
+      "test": {
+        "MAE": 0.4764,
+        "RMSE": 0.6286,
+        "R2": 0.8309,
+        "MBE": -0.16
+      },
+      "train": {
+        "MAE": 0.2263,
+        "RMSE": 0.2862,
+        "R2": 0.9695,
+        "MBE": -0.0018
+      },
+      "skill_vs_climatology": 0.3099,
+      "mae_ci95": [
+        0.367,
+        0.5859
+      ],
+      "rmse_ci95": [
+        0.4661,
+        0.7693
+      ],
+      "diebold_mariano_vs_climatology": {
+        "statistic": -2.222,
+        "p_value": 0.03103,
+        "better_than_climatology": true
+      }
+    },
+    "Multilayer Perceptron": {
+      "test": {
+        "MAE": 0.4153,
+        "RMSE": 0.5406,
+        "R2": 0.8749,
+        "MBE": 0.0862
+      },
+      "train": {
+        "MAE": 0.3037,
+        "RMSE": 0.3946,
+        "R2": 0.9421,
+        "MBE": -0.0113
+      },
+      "skill_vs_climatology": 0.4895,
+      "mae_ci95": [
+        0.3226,
+        0.5176
+      ],
+      "rmse_ci95": [
+        0.4193,
+        0.6702
+      ],
+      "diebold_mariano_vs_climatology": {
+        "statistic": -1.998,
+        "p_value": 0.0514,
+        "better_than_climatology": false
+      },
+      "diebold_mariano_vs_models": {
+        "Multiple Linear Regression": {
+          "statistic": 0.104,
+          "p_value": 0.91758
+        },
+        "Random Forest": {
+          "statistic": -0.97,
+          "p_value": 0.33705
+        }
+      }
+    }
+  },
+  "best_model": "Multilayer Perceptron",
+  "importance": {
+    "linear_coefficients": {
+      "tmean_lag0": -0.2102,
+      "tmean_lag1": 0.297,
+      "tmean_lag2": -0.0982,
+      "dtr_lag0": 0.1178,
+      "rh_lag0": -0.0388,
+      "precip_lag0": 0.1029,
+      "roll3": -0.0103,
+      "clim_target": 1.773,
+      "anomaly_lag0": 0.3019,
+      "sin_month": -0.0415,
+      "cos_month": -0.1721,
+      "trend": 0.1062
+    },
+    "permutation_importance_random_forest": [
+      {
+        "feature": "clim_target",
+        "mean": 0.3437,
+        "sd": 0.0418
+      },
+      {
+        "feature": "cos_month",
+        "mean": 0.2109,
+        "sd": 0.0334
+      },
+      {
+        "feature": "tmean_lag0",
+        "mean": 0.135,
+        "sd": 0.03
+      },
+      {
+        "feature": "sin_month",
+        "mean": 0.0286,
+        "sd": 0.0131
+      },
+      {
+        "feature": "anomaly_lag0",
+        "mean": 0.0138,
+        "sd": 0.0057
+      },
+      {
+        "feature": "tmean_lag2",
+        "mean": 0.0122,
+        "sd": 0.0122
+      },
+      {
+        "feature": "roll3",
+        "mean": 0.0121,
+        "sd": 0.0108
+      },
+      {
+        "feature": "dtr_lag0",
+        "mean": 0.0077,
+        "sd": 0.006
+      },
+      {
+        "feature": "rh_lag0",
+        "mean": 0.0048,
+        "sd": 0.0053
+      },
+      {
+        "feature": "tmean_lag1",
+        "mean": 0.0028,
+        "sd": 0.0085
+      },
+      {
+        "feature": "trend",
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      {
+        "feature": "precip_lag0",
+        "mean": -0.0067,
+        "sd": 0.0093
+      }
+    ],
+    "permutation_importance_multilayer_perceptron": [
+      {
+        "feature": "clim_target",
+        "mean": 0.8229,
+        "sd": 0.0962
+      },
+      {
+        "feature": "sin_month",
+        "mean": 0.6786,
+        "sd": 0.0908
+      },
+      {
+        "feature": "cos_month",
+        "mean": 0.6133,
+        "sd": 0.0619
+      },
+      {
+        "feature": "tmean_lag0",
+        "mean": 0.4494,
+        "sd": 0.0734
+      },
+      {
+        "feature": "roll3",
+        "mean": 0.2326,
+        "sd": 0.052
+      },
+      {
+        "feature": "anomaly_lag0",
+        "mean": 0.2005,
+        "sd": 0.0579
+      },
+      {
+        "feature": "dtr_lag0",
+        "mean": 0.1424,
+        "sd": 0.0385
+      },
+      {
+        "feature": "tmean_lag1",
+        "mean": 0.1148,
+        "sd": 0.0282
+      },
+      {
+        "feature": "trend",
+        "mean": 0.083,
+        "sd": 0.0203
+      },
+      {
+        "feature": "tmean_lag2",
+        "mean": 0.0742,
+        "sd": 0.0265
+      },
+      {
+        "feature": "precip_lag0",
+        "mean": 0.0617,
+        "sd": 0.0264
+      },
+      {
+        "feature": "rh_lag0",
+        "mean": 0.0488,
+        "sd": 0.0273
+      }
+    ]
+  }
+}

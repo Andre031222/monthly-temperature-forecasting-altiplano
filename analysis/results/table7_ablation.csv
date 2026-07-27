@@ -1,0 +1,6 @@
+Predictor set,k,MLR,RF,MLP
+Seasonal only,3,0.599,0.597,0.593
+Thermal memory only,4,0.704,0.537,0.610
+Seasonal + memory,8,0.423,0.476,0.476
+Without atmospheric covariates,9,0.423,0.468,0.506
+All predictors,12,0.421,0.476,0.415

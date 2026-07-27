@@ -1,0 +1,100 @@
+{
+  "PUNO": {
+    "start": "2003-01-01",
+    "end": "2024-12-31",
+    "rows": 7279,
+    "expected_days": 8036,
+    "absent_days": 757,
+    "absent_blocks": [
+      {
+        "from": "2004-11-01",
+        "to": "2004-11-30",
+        "days": 30
+      },
+      {
+        "from": "2020-04-01",
+        "to": "2020-11-30",
+        "days": 244
+      },
+      {
+        "from": "2021-02-01",
+        "to": "2021-02-28",
+        "days": 28
+      },
+      {
+        "from": "2022-04-01",
+        "to": "2022-06-30",
+        "days": 91
+      },
+      {
+        "from": "2022-10-01",
+        "to": "2023-07-31",
+        "days": 304
+      },
+      {
+        "from": "2024-01-01",
+        "to": "2024-02-29",
+        "days": 60
+      }
+    ],
+    "missing_pct": {
+      "rh": 10.36,
+      "precip": 4.6,
+      "tmean": 10.72,
+      "tmax": 1.85,
+      "tmin": 1.26
+    },
+    "inconsistent_temperature_rows": 0
+  },
+  "UROS": {
+    "start": "2003-01-01",
+    "end": "2024-12-31",
+    "rows": 7279,
+    "expected_days": 8036,
+    "absent_days": 757,
+    "absent_blocks": [
+      {
+        "from": "2004-11-01",
+        "to": "2004-11-30",
+        "days": 30
+      },
+      {
+        "from": "2020-04-01",
+        "to": "2020-11-30",
+        "days": 244
+      },
+      {
+        "from": "2021-02-01",
+        "to": "2021-02-28",
+        "days": 28
+      },
+      {
+        "from": "2022-04-01",
+        "to": "2022-06-30",
+        "days": 91
+      },
+      {
+        "from": "2022-10-01",
+        "to": "2023-07-31",
+        "days": 304
+      },
+      {
+        "from": "2024-01-01",
+        "to": "2024-02-29",
+        "days": 60
+      }
+    ],
+    "missing_pct": {
+      "rh": 10.36,
+      "precip": 4.6,
+      "tmean": 10.72,
+      "tmax": 1.85,
+      "tmin": 1.26
+    },
+    "inconsistent_temperature_rows": 0
+  },
+  "duplicate_sheets": [
+    "UROS"
+  ],
+  "station_used": "PUNO"
+}

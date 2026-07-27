@@ -1,0 +1,74 @@
+{
+  "PUNO": {
+    "name": "Puno Principal Climatological Station",
+    "start": "2003-01-01",
+    "end": "2024-12-31",
+    "n_daily_rows": 7279,
+    "n_expected_days": 8036,
+    "n_absent_dates": 757,
+    "missing_pct": {
+      "rh": 10.36,
+      "precip": 4.6,
+      "tmean": 10.72,
+      "tmax": 1.85,
+      "tmin": 1.26
+    },
+    "physically_inconsistent_temp_rows": 0,
+    "out_of_range_rh_rows": 0,
+    "n_months": 239,
+    "n_months_invalid_tmean": 39,
+    "monthly_missing_pct": {
+      "tmean": 16.32,
+      "tmax": 16.32,
+      "tmin": 16.32,
+      "rh": 15.9,
+      "precip": 1.26
+    },
+    "tmean_stats": {
+      "count": 200.0,
+      "mean": 10.409,
+      "std": 1.539,
+      "min": 6.59,
+      "25%": 9.185,
+      "50%": 10.637,
+      "75%": 11.51,
+      "max": 13.564
+    }
+  },
+  "UROS": {
+    "name": "Los Uros Ordinary Climatological Station",
+    "start": "2003-01-01",
+    "end": "2024-12-31",
+    "n_daily_rows": 7279,
+    "n_expected_days": 8036,
+    "n_absent_dates": 757,
+    "missing_pct": {
+      "rh": 10.36,
+      "precip": 4.6,
+      "tmean": 10.72,
+      "tmax": 1.85,
+      "tmin": 1.26
+    },
+    "physically_inconsistent_temp_rows": 0,
+    "out_of_range_rh_rows": 0,
+    "n_months": 239,
+    "n_months_invalid_tmean": 39,
+    "monthly_missing_pct": {
+      "tmean": 16.32,
+      "tmax": 16.32,
+      "tmin": 16.32,
+      "rh": 15.9,
+      "precip": 1.26
+    },
+    "tmean_stats": {
+      "count": 200.0,
+      "mean": 10.409,
+      "std": 1.539,
+      "min": 6.59,
+      "25%": 9.185,
+      "50%": 10.637,
+      "75%": 11.51,
+      "max": 13.564
+    }
+  }
+}

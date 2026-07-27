@@ -1,0 +1,18 @@
+Characteristic,Value
+Record span,2003-01-01 to 2024-12-31
+Daily records available,"7,279"
+Calendar days in span,"8,036"
+Absent calendar days,757 (9.4%)
+Missing daily mean temperature,10.72%
+Missing daily maximum temperature,1.85%
+Missing daily minimum temperature,1.26%
+Missing daily relative humidity,10.36%
+Missing daily precipitation,4.60%
+Physically inconsistent temperature records,0
+Daily values recovered by calibration,606
+Candidate months,264
+Months meeting WMO completeness,236 (89.4%)
+Mean of the monthly series,10.72 °C
+Standard deviation of the monthly series,1.62 °C
+Range of the monthly series,6.59 to 14.21 °C
+Linear trend,+0.54 ± 0.17 °C decade⁻¹ (p = 0.0017)

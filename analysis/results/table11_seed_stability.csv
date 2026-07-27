@@ -1,0 +1,4 @@
+Model,MAE (single fit),Mean MAE over seeds,SD,Range over seeds,Seeds beating MLR
+MLR,0.421,deterministic,—,—,—
+RF,0.476,0.476,0.005,0.464–0.486,0/50
+MLP,0.415,0.495,0.048,0.407–0.647,4/50

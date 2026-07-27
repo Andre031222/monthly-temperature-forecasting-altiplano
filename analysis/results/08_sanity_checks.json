@@ -1,0 +1,96 @@
+{
+  "record_counts": {
+    "excel_rows_read": 7279,
+    "daily_rows_after_cleaning": 7279,
+    "rows_dropped_as_non_data": 0,
+    "unique_dates": 7279,
+    "duplicate_dates": 0,
+    "monthly_rows": 264,
+    "monthly_valid_tmean": 236,
+    "supervised_rows": 186,
+    "supervised_nan_cells": 0
+  },
+  "split_integrity": {
+    "n_train": 137,
+    "n_test": 49,
+    "sum_equals_total": true,
+    "overlapping_target_dates": 0,
+    "last_train_target": "2016-12-01",
+    "first_test_target": "2017-01-01",
+    "train_strictly_before_test": true,
+    "feature_dates_precede_targets": true
+  },
+  "predictions_distinct": {
+    "n_test_rows": 49,
+    "any_prediction_equals_observed": false,
+    "pairwise": {
+      "Climatology vs Persistence": {
+        "identical": false,
+        "max_abs_difference": 3.3844
+      },
+      "Climatology vs Multiple Linear Regression": {
+        "identical": false,
+        "max_abs_difference": 1.4684
+      },
+      "Climatology vs Random Forest": {
+        "identical": false,
+        "max_abs_difference": 1.8746
+      },
+      "Climatology vs Multilayer Perceptron": {
+        "identical": false,
+        "max_abs_difference": 2.9508
+      },
+      "Persistence vs Multiple Linear Regression": {
+        "identical": false,
+        "max_abs_difference": 1.9515
+      },
+      "Persistence vs Random Forest": {
+        "identical": false,
+        "max_abs_difference": 1.733
+      },
+      "Persistence vs Multilayer Perceptron": {
+        "identical": false,
+        "max_abs_difference": 1.9698
+      },
+      "Multiple Linear Regression vs Random Forest": {
+        "identical": false,
+        "max_abs_difference": 1.8117
+      },
+      "Multiple Linear Regression vs Multilayer Perceptron": {
+        "identical": false,
+        "max_abs_difference": 1.5179
+      },
+      "Random Forest vs Multilayer Perceptron": {
+        "identical": false,
+        "max_abs_difference": 1.2364
+      }
+    }
+  },
+  "missing_data_handling": {
+    "daily_missing_tmean_before_calibration": 780,
+    "months_rejected_by_wmo_rule": 28,
+    "rejected_months_all_have_gaps": true,
+    "max_missing_days_in_an_accepted_month": 4,
+    "max_consecutive_gap_in_an_accepted_month": 2,
+    "wmo_thresholds": "accepted months must have <= 10 missing days and < 5 consecutive",
+    "calibrated_days_in_accepted_months": 604,
+    "supervised_samples_lost_to_gaps": 49,
+    "target_never_reconstructed_beyond_limit": true
+  },
+  "permutation_leakage_test": {
+    "real_mae_C": 0.4208,
+    "shuffled_mae_mean_C": 1.4019,
+    "shuffled_mae_min_C": 1.0688,
+    "n_permutations": 200,
+    "n_shuffled_better_than_real": 0,
+    "empirical_p_value": 0.00498,
+    "interpretation": "If shuffling the target destroys accuracy, the model learned signal, not leakage."
+  },
+  "runtime": {
+    "matrix_shape": "137 rows x 12 columns",
+    "cells_in_training_matrix": 1644,
+    "seconds_for_100_linear_fits": 0.2293,
+    "milliseconds_per_fit": 2.293,
+    "note": "The dataset is small by design: 22 years of monthly data cannot exceed 264 rows."
+  }
+}

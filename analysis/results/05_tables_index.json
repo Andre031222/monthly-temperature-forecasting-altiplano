@@ -1,0 +1,62 @@
+{
+  "table1_record_characteristics": {
+    "rows": 17,
+    "columns": [
+      "Characteristic",
+      "Value"
+    ]
+  },
+  "table2_missing_blocks": {
+    "rows": 7,
+    "columns": [
+      "Period absent from the record",
+      "Days"
+    ]
+  },
+  "table3_monthly_climatology": {
+    "rows": 12,
+    "columns": [
+      "Month",
+      "n",
+      "Mean (°C)",
+      "SD (°C)",
+      "Minimum (°C)",
+      "Maximum (°C)",
+      "Mean RH (%)",
+      "Mean precipitation (mm)"
+    ]
+  },
+  "table4_model_performance": {
+    "rows": 5,
+    "columns": [
+      "Model",
+      "MAE (°C)",
+      "MAE 95% CI",
+      "RMSE (°C)",
+      "R²",
+      "MBE (°C)",
+      "MSSS",
+      "DM p-value"
+    ]
+  },
+  "table5_generalisation": {
+    "rows": 3,
+    "columns": [
+      "Model",
+      "Training MAE (°C)",
+      "Test MAE (°C)",
+      "Ratio",
+      "Cross-validated MAE (°C)",
+      "Selected hyperparameters"
+    ]
+  },
+  "table6_predictor_importance": {
+    "rows": 12,
+    "columns": [
+      "Predictor",
+      "MLR standardised coefficient",
+      "RF permutation importance (°C)",
+      "MLP permutation importance (°C)"
+    ]
+  }
+}

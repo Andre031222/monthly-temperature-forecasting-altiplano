@@ -1,0 +1,280 @@
+{
+  "ablation": {
+    "Seasonal only": {
+      "n_predictors": 3,
+      "Multiple Linear Regression": {
+        "MAE": 0.5987,
+        "RMSE": 0.755
+      },
+      "Random Forest": {
+        "MAE": 0.5968,
+        "RMSE": 0.7585
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.5934,
+        "RMSE": 0.7793
+      }
+    },
+    "Thermal memory only": {
+      "n_predictors": 4,
+      "Multiple Linear Regression": {
+        "MAE": 0.7037,
+        "RMSE": 0.8361
+      },
+      "Random Forest": {
+        "MAE": 0.5374,
+        "RMSE": 0.7385
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.61,
+        "RMSE": 0.7675
+      }
+    },
+    "Seasonal + memory": {
+      "n_predictors": 8,
+      "Multiple Linear Regression": {
+        "MAE": 0.4233,
+        "RMSE": 0.5505
+      },
+      "Random Forest": {
+        "MAE": 0.4756,
+        "RMSE": 0.6138
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.4761,
+        "RMSE": 0.6274
+      }
+    },
+    "Without atmospheric covariates": {
+      "n_predictors": 9,
+      "Multiple Linear Regression": {
+        "MAE": 0.4226,
+        "RMSE": 0.5393
+      },
+      "Random Forest": {
+        "MAE": 0.4684,
+        "RMSE": 0.6046
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.5056,
+        "RMSE": 0.6377
+      }
+    },
+    "All predictors": {
+      "n_predictors": 12,
+      "Multiple Linear Regression": {
+        "MAE": 0.4208,
+        "RMSE": 0.5323
+      },
+      "Random Forest": {
+        "MAE": 0.4764,
+        "RMSE": 0.6286
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.4153,
+        "RMSE": 0.5406
+      }
+    }
+  },
+  "seasonal": {
+    "Wet season (Dec-Mar)": {
+      "n_months": 13,
+      "observed_sd_C": 0.679,
+      "Multiple Linear Regression": {
+        "MAE": 0.4733,
+        "MBE": 0.3862
+      },
+      "Random Forest": {
+        "MAE": 0.3611,
+        "MBE": 0.1384
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.3689,
+        "MBE": -0.0475
+      }
+    },
+    "Dry season (May-Aug)": {
+      "n_months": 18,
+      "observed_sd_C": 0.7,
+      "Multiple Linear Regression": {
+        "MAE": 0.348,
+        "MBE": -0.1007
+      },
+      "Random Forest": {
+        "MAE": 0.4012,
+        "MBE": -0.1797
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.4178,
+        "MBE": 0.2862
+      }
+    },
+    "Transition (Apr, Sep-Nov)": {
+      "n_months": 18,
+      "observed_sd_C": 1.215,
+      "Multiple Linear Regression": {
+        "MAE": 0.4556,
+        "MBE": 0.1127
+      },
+      "Random Forest": {
+        "MAE": 0.6349,
+        "MBE": -0.3558
+      },
+      "Multilayer Perceptron": {
+        "MAE": 0.4463,
+        "MBE": -0.0172
+      }
+    }
+  },
+  "residuals": {
+    "Multiple Linear Regression": {
+      "mean_C": 0.1069,
+      "sd_C": 0.5269,
+      "shapiro_W": 0.9877,
+      "shapiro_p": 0.8838,
+      "normal_at_0.05": true,
+      "lag1_autocorrelation": 0.131,
+      "ljung_box_Q5": 9.876,
+      "ljung_box_p": 0.0788,
+      "white_noise_at_0.05": true
+    },
+    "Random Forest": {
+      "mean_C": -0.16,
+      "sd_C": 0.6142,
+      "shapiro_W": 0.9395,
+      "shapiro_p": 0.0142,
+      "normal_at_0.05": false,
+      "lag1_autocorrelation": 0.4275,
+      "ljung_box_Q5": 16.608,
+      "ljung_box_p": 0.0053,
+      "white_noise_at_0.05": false
+    },
+    "Multilayer Perceptron": {
+      "mean_C": 0.0862,
+      "sd_C": 0.5392,
+      "shapiro_W": 0.9809,
+      "shapiro_p": 0.6023,
+      "normal_at_0.05": true,
+      "lag1_autocorrelation": 0.0195,
+      "ljung_box_Q5": 13.597,
+      "ljung_box_p": 0.0184,
+      "white_noise_at_0.05": false
+    }
+  },
+  "learning_curve": {
+    "sizes": [
+      30,
+      45,
+      60,
+      75,
+      90,
+      105,
+      120,
+      137
+    ],
+    "curves": {
+      "Multiple Linear Regression": [
+        {
+          "n_train": 30,
+          "MAE": 0.714
+        },
+        {
+          "n_train": 45,
+          "MAE": 0.5612
+        },
+        {
+          "n_train": 60,
+          "MAE": 0.428
+        },
+        {
+          "n_train": 75,
+          "MAE": 0.4069
+        },
+        {
+          "n_train": 90,
+          "MAE": 0.4225
+        },
+        {
+          "n_train": 105,
+          "MAE": 0.426
+        },
+        {
+          "n_train": 120,
+          "MAE": 0.4192
+        },
+        {
+          "n_train": 137,
+          "MAE": 0.4208
+        }
+      ],
+      "Random Forest": [
+        {
+          "n_train": 30,
+          "MAE": 0.7113
+        },
+        {
+          "n_train": 45,
+          "MAE": 0.5695
+        },
+        {
+          "n_train": 60,
+          "MAE": 0.5322
+        },
+        {
+          "n_train": 75,
+          "MAE": 0.5038
+        },
+        {
+          "n_train": 90,
+          "MAE": 0.4883
+        },
+        {
+          "n_train": 105,
+          "MAE": 0.4856
+        },
+        {
+          "n_train": 120,
+          "MAE": 0.5013
+        },
+        {
+          "n_train": 137,
+          "MAE": 0.4764
+        }
+      ],
+      "Multilayer Perceptron": [
+        {
+          "n_train": 30,
+          "MAE": 0.5296
+        },
+        {
+          "n_train": 45,
+          "MAE": 0.5667
+        },
+        {
+          "n_train": 60,
+          "MAE": 0.7267
+        },
+        {
+          "n_train": 75,
+          "MAE": 0.6187
+        },
+        {
+          "n_train": 90,
+          "MAE": 0.5293
+        },
+        {
+          "n_train": 105,
+          "MAE": 0.4547
+        },
+        {
+          "n_train": 120,
+          "MAE": 0.4088
+        },
+        {
+          "n_train": 137,
+          "MAE": 0.4153
+        }
+      ]
+    }
+  }
+}

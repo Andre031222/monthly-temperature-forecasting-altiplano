@@ -1,0 +1,89 @@
+{
+  "independence": {
+    "n_stations_requested": 13,
+    "identical_series_groups": [
+      [
+        "Ayaviri",
+        "Cojata"
+      ],
+      [
+        "Juli",
+        "Yunguyo"
+      ]
+    ],
+    "n_independent_series": 11,
+    "max_pairwise_correlation": 1.0,
+    "min_pairwise_correlation": 0.6898,
+    "mean_pairwise_correlation": 0.8538,
+    "pairs_above_0.99": [
+      "Ayaviri vs Cojata",
+      "Juli vs Yunguyo"
+    ]
+  },
+  "validation_against_senamhi": {
+    "n_matched_days": 7279,
+    "tmean": {
+      "n": 6499,
+      "senamhi_mean": 10.579,
+      "nasa_mean": 8.002,
+      "bias_nasa_minus_senamhi": -2.577,
+      "mae": 2.583,
+      "rmse": 2.828,
+      "pearson_r": 0.8223,
+      "paired_t": -178.28,
+      "p_value": 0.0
+    },
+    "tmax": {
+      "n": 7144,
+      "senamhi_mean": 16.399,
+      "nasa_mean": 15.19,
+      "bias_nasa_minus_senamhi": -1.209,
+      "mae": 1.669,
+      "rmse": 2.133,
+      "pearson_r": 0.6294,
+      "paired_t": -58.17,
+      "p_value": 0.0
+    },
+    "tmin": {
+      "n": 7187,
+      "senamhi_mean": 3.645,
+      "nasa_mean": 2.358,
+      "bias_nasa_minus_senamhi": -1.287,
+      "mae": 1.873,
+      "rmse": 2.286,
+      "pearson_r": 0.7783,
+      "paired_t": -57.75,
+      "p_value": 0.0
+    },
+    "rh": {
+      "n": 6525,
+      "senamhi_mean": 60.748,
+      "nasa_mean": 57.13,
+      "bias_nasa_minus_senamhi": -3.618,
+      "mae": 8.62,
+      "rmse": 11.051,
+      "pearson_r": 0.6555,
+      "paired_t": -27.99,
+      "p_value": 7.4677520746088e-163
+    },
+    "precip": {
+      "n": 6944,
+      "senamhi_mean": 2.016,
+      "nasa_mean": 1.149,
+      "bias_nasa_minus_senamhi": -0.867,
+      "mae": 1.943,
+      "rmse": 5.168,
+      "pearson_r": 0.3104,
+      "paired_t": -14.18,
+      "p_value": 5.171239021149149e-45
+    },
+    "monthly_tmean": {
+      "n_months": 236,
+      "bias_C": -2.622,
+      "mae_C": 2.622,
+      "rmse_C": 2.667,
+      "pearson_r": 0.9548,
+      "anomaly_correlation": 0.9548
+    }
+  }
+}

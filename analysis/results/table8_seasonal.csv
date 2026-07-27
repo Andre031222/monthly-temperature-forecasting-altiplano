@@ -1,0 +1,4 @@
+Season,n,SD (°C),MLR,RF,MLP
+Wet season (Dec-Mar),13,0.68,0.473,0.361,0.369
+Dry season (May-Aug),18,0.70,0.348,0.401,0.418
+"Transition (Apr, Sep-Nov)",18,1.22,0.456,0.635,0.446

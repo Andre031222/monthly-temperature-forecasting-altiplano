@@ -1,0 +1,46 @@
+{
+  "Multiple Linear Regression": {
+    "deterministic": true,
+    "MAE": 0.4208,
+    "RMSE": 0.5323,
+    "note": "Ordinary least squares has a closed-form solution; no random seed is involved."
+  },
+  "Random Forest": {
+    "n_seeds": 50,
+    "mean_MAE": 0.4763,
+    "sd_MAE": 0.0055,
+    "min_MAE": 0.4644,
+    "max_MAE": 0.4862,
+    "median_MAE": 0.4766,
+    "range_MAE": 0.0218,
+    "reported_seed42_MAE": 0.4764,
+    "percentile_of_seed42": 46.0,
+    "mean_RMSE": 0.6269,
+    "sd_RMSE": 0.0073,
+    "ensemble_MAE": 0.4749,
+    "ensemble_RMSE": 0.6255,
+    "seeds_beating_linear": 0,
+    "share_beating_linear": 0.0
+  },
+  "Multilayer Perceptron": {
+    "n_seeds": 50,
+    "mean_MAE": 0.4953,
+    "sd_MAE": 0.0478,
+    "min_MAE": 0.4069,
+    "max_MAE": 0.6468,
+    "median_MAE": 0.4891,
+    "range_MAE": 0.2399,
+    "reported_seed42_MAE": 0.4153,
+    "percentile_of_seed42": 6.0,
+    "mean_RMSE": 0.6623,
+    "sd_RMSE": 0.0616,
+    "ensemble_MAE": 0.4209,
+    "ensemble_RMSE": 0.5638,
+    "seeds_beating_linear": 4,
+    "share_beating_linear": 0.08
+  },
+  "interpretation": {
+    "linear_mae": 0.4208,
+    "question": "Is the single-seed advantage of the neural model reproducible?"
+  }
+}
