@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: >-
+  Multiple linear regression outperforms machine learning for monthly
+  temperature forecasting across the Peruvian Altiplano
+abstract: >-
+  Code, data and results for a verification study of one-month-ahead monthly
+  mean temperature forecasts at the Puno Principal Climatological Station,
+  replicated across eleven independent Altiplano series. Multiple linear
+  regression, random forest and a multilayer perceptron are compared against
+  monthly climatology and persistence under a strictly chronological split,
+  with Diebold-Mariano tests and bootstrap confidence intervals.
+type: software
+license: CC-BY-4.0
+repository-code: >-
+  https://github.com/Andre031222/monthly-temperature-forecasting-altiplano
+url: >-
+  https://github.com/Andre031222/monthly-temperature-forecasting-altiplano
+year: 2026
+authors:
+  - family-names: Coyla-Idme
+    given-names: Leonel
+    affiliation: >-
+      Professional School of Statistical and Informatics Engineering,
+      Universidad Nacional del Altiplano de Puno, Peru
+    email: lcoyla@unap.edu.pe
+  - family-names: Ruiz Roque-Mamani
+    given-names: Vidman
+    affiliation: >-
+      Professional School of Statistical and Informatics Engineering,
+      Universidad Nacional del Altiplano de Puno, Peru
+  - family-names: Suni-Morales
+    given-names: Smit Alexander
+    affiliation: >-
+      Professional School of Statistical and Informatics Engineering,
+      Universidad Nacional del Altiplano de Puno, Peru
+  - family-names: Salcca-Lagar
+    given-names: Keysi
+    affiliation: >-
+      Professional School of Statistical and Informatics Engineering,
+      Universidad Nacional del Altiplano de Puno, Peru
+  - family-names: Arias-Ramírez
+    given-names: Alex
+    affiliation: >-
+      Professional School of Statistical and Informatics Engineering,
+      Universidad Nacional del Altiplano de Puno, Peru
+  - family-names: Flores-Nina
+    given-names: Antony Jhonatan
+    affiliation: >-
+      Professional School of Statistical and Informatics Engineering,
+      Universidad Nacional del Altiplano de Puno, Peru
+  - family-names: Vilca-Solorzano
+    given-names: Richar Andre
+    orcid: "https://orcid.org/0009-0003-2385-5263"
+    affiliation: >-
+      Professional School of Statistical and Informatics Engineering,
+      Universidad Nacional del Altiplano de Puno, Peru
+keywords:
+  - monthly temperature forecasting
+  - machine learning
+  - climatological baseline
+  - forecast verification
+  - Peruvian Altiplano
+  - model parsimony
+  - NASA POWER
+  - reproducible research
