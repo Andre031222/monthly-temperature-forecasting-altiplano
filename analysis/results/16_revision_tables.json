@@ -1,0 +1,9 @@
+{
+  "tables": {
+    "rev_table1_record.csv": 19,
+    "rev_table2_performance.csv": 11,
+    "rev_table3_diagnostics.csv": 17,
+    "rev_table4_replication.csv": 12
+  },
+  "n_tables": 4
+}

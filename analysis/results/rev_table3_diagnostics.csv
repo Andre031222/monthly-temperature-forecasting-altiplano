@@ -1,0 +1,18 @@
+Diagnostic,MLR,RF,MLP
+Shapiro-Wilk W,0.988,0.940,0.981
+W p,0.884,0.014,0.602
+Lag-1 autocorrelation,+0.131,+0.427,+0.019
+Ljung-Box Q,9.88,16.61,13.60
+Q p,0.079,0.005,0.018
+Mean MAE over seeds (°C),—,0.476,0.495
+SD over seeds (°C),—,0.005,0.048
+Range over seeds (°C),—,0.464–0.486,0.407–0.647
+Seeds beating MLR,—,0/50,4/50
+"MAE, seasonal only (k = 3)",0.599,0.597,0.593
+"MAE, memory only (k = 4)",0.704,0.537,0.610
+"MAE, seasonal + memory (k = 8)",0.423,0.476,0.476
+"MAE, without covariates (k = 9)",0.423,0.468,0.506
+"MAE, all predictors (k = 12)",0.421,0.476,0.415
+"MAE, wet season (n = 13)",0.473,0.361,0.369
+"MAE, dry season (n = 18)",0.348,0.401,0.418
+"MAE, transition (n = 18)",0.456,0.635,0.446

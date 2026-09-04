@@ -123,17 +123,20 @@ monthly-temperature-forecasting-altiplano/
 │   ├── 01_load_aggregate.py             # Load, audit, detect duplicate sheets
 │   ├── 02_calibrate_and_build.py        # Calibrated reconstruction + monthly series
 │   ├── 03_models.py                     # Models, baselines, Diebold-Mariano, bootstrap
-│   ├── 04_figures.py                    # Figures 1-5
-│   ├── 05_tables.py                     # Tables 1-6
+│   ├── 04_figures.py                    # Exploratory figures
+│   ├── 05_tables.py                     # Exploratory tables
 │   ├── 06_extended_analysis.py          # Ablation, seasonality, residuals, learning curve
-│   ├── 07_figures_extended.py           # Figures 6-7
+│   ├── 07_figures_extended.py           # Exploratory figures
 │   ├── 08_sanity_checks.py              # Leakage test, split integrity, missing data
 │   ├── 09_scaling_extrapolation.py      # Power-law fit and crossing-point bootstrap
 │   ├── 10_seed_stability.py             # 50-seed replication of stochastic models
 │   ├── 11_download_nasa_power.py        # NASA POWER retrieval (public API)
 │   ├── 12_validate_nasa_power.py        # Independence check + validation vs. SENAMHI
 │   ├── 13_multistation_replication.py   # 11-series replication, pooled learning curves
-│   ├── 14_figures_replication.py        # Figures 8-9
+│   ├── 14_figures_replication.py        # Exploratory figures
+│   ├── 15_repository_qr.py              # QR code for this repository
+│   ├── 16_revision_tables.py            # Tables 1-4 of the paper
+│   ├── 17_revision_figures.py           # Figures 1-3 of the paper
 │   │
 │   ├── data/                            # Generated intermediates + NASA POWER CSVs
 │   ├── results/                         # JSON reports and publication tables
@@ -164,11 +167,34 @@ python 11_download_nasa_power.py     # downloads 13 series from the public API
 python 12_validate_nasa_power.py
 python 13_multistation_replication.py
 python 14_figures_replication.py
+python 15_repository_qr.py
+python 16_revision_tables.py         # Tables 1-4 as published
+python 17_revision_figures.py        # Figures 1-3 as published
 ```
 
 Scripts run in order; each writes its own JSON report to `analysis/results/`. Every random operation is seeded, so the numbers above reproduce exactly. Total runtime is roughly 25 minutes on a standard laptop, most of it in hyperparameter search.
 
 **No API key or registration is required.** `11_download_nasa_power.py` uses the public NASA POWER endpoint directly.
+
+### Which files correspond to the published tables and figures
+
+The journal limits tables and figures to seven items combined, so the paper reports four
+consolidated tables and three multi-panel figures. Scripts `16` and `17` build them by
+reading the JSON reports written by scripts `01`-`13`; they refit no model, so their
+values are identical to those produced by the earlier scripts.
+
+| Published item | File |
+|---|---|
+| Table 1. Record, absent periods and retained series | `analysis/results/rev_table1_record.csv` |
+| Table 2. Accuracy, skill and generalisation | `analysis/results/rev_table2_performance.csv` |
+| Table 3. Residuals, seed stability, ablation, season | `analysis/results/rev_table3_diagnostics.csv` |
+| Table 4. Replication across eleven series | `analysis/results/rev_table4_replication.csv` |
+| Figure 1. Record and temporal structure | `analysis/figures/figure1_record_and_structure.*` |
+| Figure 2. Forecast performance | `analysis/figures/figure2_forecast_performance.*` |
+| Figure 3. Replication and scaling | `analysis/figures/figure3_replication_and_scaling.*` |
+
+The remaining `table*.csv` and `figure4`-`figure9` files are the more granular outputs of
+scripts `04`, `05`, `07` and `14`, kept because the consolidated items are built from them.
 
 ---
 

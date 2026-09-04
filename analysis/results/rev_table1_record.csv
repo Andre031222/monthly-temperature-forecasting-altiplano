@@ -1,0 +1,20 @@
+Characteristic,Value
+Record span,2003-01-01 to 2024-12-31
+Daily records available,"7,279"
+Calendar days in span,"8,036"
+Absent calendar days,757 (9.4%) in 6 blocks
+Longest absent block,October 2022 – July 2023 (304 days)
+Missing daily mean temperature,10.72%
+Missing daily maximum / minimum temperature,1.85% / 1.26%
+Missing daily relative humidity / precipitation,10.36% / 4.60%
+Physically inconsistent temperature records,0
+Daily values recovered by calibration,"606 in the record, 8.4% of the days in retained months"
+Candidate months,264
+Months meeting WMO completeness,236 (89.4%)
+Mean of the retained monthly series,10.72 °C
+Standard deviation of the retained monthly series,1.62 °C
+Range of the retained monthly series,6.59 to 14.21 °C
+Coldest / warmest climatological month,"July, 8.17 °C / November, 12.85 °C"
+Seasonal amplitude of the climatology,4.68 °C
+Mean within-month standard deviation,0.71 °C
+Linear trend,+0.54 ± 0.17 °C decade⁻¹ (p = 0.0017)

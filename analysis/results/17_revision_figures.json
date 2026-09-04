@@ -1,0 +1,8 @@
+{
+  "reanalysis_agreement": {
+    "n_months": 236,
+    "pearson_r": 0.9548,
+    "deseasonalised_anomaly_r": 0.8108,
+    "bias_C": -2.622
+  }
+}
