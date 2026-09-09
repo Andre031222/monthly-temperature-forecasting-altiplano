@@ -20,11 +20,12 @@ year: 2026
 authors:
   - family-names: Coyla-Idme
     given-names: Leonel
+    orcid: "https://orcid.org/0000-0003-3538-1061"
     affiliation: >-
       Professional School of Statistical and Informatics Engineering,
       Universidad Nacional del Altiplano de Puno, Peru
     email: lcoyla@unap.edu.pe
-  - family-names: Ruiz Roque-Mamani
+  - family-names: Ruis Roque-Mamani
     given-names: Vidman
     affiliation: >-
       Professional School of Statistical and Informatics Engineering,
@@ -64,3 +65,34 @@ keywords:
   - model parsimony
   - NASA POWER
   - reproducible research
+preferred-citation:
+  type: article
+  title: >-
+    Multiple Linear Regression Outperforms Machine Learning for Monthly
+    Temperature Forecasting across the Peruvian Altiplano
+  journal: World Journal of Environmental Biosciences
+  volume: 15
+  issue: 3
+  start: 102
+  end: 112
+  year: 2026
+  issn: "2277-8047"
+  doi: 10.51847/zMqqEu22RP
+  url: "https://doi.org/10.51847/zMqqEu22RP"
+  authors:
+    - family-names: Coyla-Idme
+      given-names: Leonel
+      orcid: "https://orcid.org/0000-0003-3538-1061"
+    - family-names: Ruis Roque-Mamani
+      given-names: Vidman
+    - family-names: Suni-Morales
+      given-names: Smit Alexander
+    - family-names: Salcca-Lagar
+      given-names: Keysi
+    - family-names: Arias-Ramírez
+      given-names: Alex
+    - family-names: Flores-Nina
+      given-names: Antony Jhonatan
+    - family-names: Vilca-Solorzano
+      given-names: Richar Andre
+      orcid: "https://orcid.org/0009-0003-2385-5263"

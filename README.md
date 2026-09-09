@@ -4,16 +4,21 @@
 random forest and a multilayer perceptron, verified against climatology and persistence
 at a station record and replicated across eleven independent series.**
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-15803d?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
+[![DOI](https://img.shields.io/badge/DOI-10.51847%2FzMqqEu22RP-1d4ed8?style=flat-square)](https://doi.org/10.51847/zMqqEu22RP)
+[![WJEB](https://img.shields.io/badge/WJEB-Vol._15_No._3_%282026%29-0b3d91?style=flat-square)](https://environmentaljournals.org)
+[![License: CC BY 4.0](https://img.shields.io/badge/Code-CC_BY_4.0-15803d?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-3776ab?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![Data: SENAMHI + NASA POWER](https://img.shields.io/badge/Data-SENAMHI_%2B_NASA_POWER-0b3d91?style=flat-square)](https://power.larc.nasa.gov/)
-[![Series](https://img.shields.io/badge/Series-11_independent-64748b?style=flat-square)](#replication-across-eleven-series)
+[![Data: SENAMHI + NASA POWER](https://img.shields.io/badge/Data-SENAMHI_%2B_NASA_POWER-64748b?style=flat-square)](https://power.larc.nasa.gov/)
 [![Skill score](https://img.shields.io/badge/MSSS_vs_climatology-0.505-2E7D32?style=flat-square)](#key-results)
-[![Reproducible](https://img.shields.io/badge/Pipeline-Seeded_%26_reproducible-1d4ed8?style=flat-square)](#reproducing-the-results)
+[![Reproducible](https://img.shields.io/badge/Pipeline-Seeded_%26_reproducible-337AB7?style=flat-square)](#reproducing-the-results)
 
-Universidad Nacional del Altiplano de Puno, Peru — Professional School of Statistical and
-Informatics Engineering. Manuscript under review; this repository holds the code, the
-data and every reported value.
+**Published in:** *World Journal of Environmental Biosciences*, Vol. 15, No. 3 (2026), 102–112 ·
+DOI [10.51847/zMqqEu22RP](https://doi.org/10.51847/zMqqEu22RP) ·
+[article page](https://environmentaljournals.org/article/multiple-linear-regression-outperforms-machine-learning-for-monthly-temperature-forecasting-across-t-axe1yhycbdcbgon)
+
+Professional School of Statistical and Informatics Engineering, Universidad Nacional del
+Altiplano de Puno, Peru. This repository holds the code, the data and every reported value;
+the article itself is distributed by the journal.
 
 ---
 
@@ -298,17 +303,17 @@ that comparison.
 ## Authors
 
 Professional School of Statistical and Informatics Engineering, Universidad Nacional del
-Altiplano de Puno, Peru. Listed in the order of the manuscript.
+Altiplano de Puno, Peru. Listed in the order of the published article.
 
-| Author | ORCID |
+| Author | ORCID iD |
 |---|---|
-| **Leonel Coyla-Idme** \* | — |
-| Vidman Ruiz Roque-Mamani | — |
+| **Leonel Coyla-Idme** \* | [<img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" width="14" alt="ORCID iD"> 0000-0003-3538-1061](https://orcid.org/0000-0003-3538-1061) |
+| Vidman Ruis Roque-Mamani | — |
 | Smit Alexander Suni-Morales | — |
 | Keysi Salcca-Lagar | — |
 | Alex Arias-Ramírez | — |
 | Antony Jhonatan Flores-Nina | — |
-| Richar Andre Vilca-Solorzano | [0009-0003-2385-5263](https://orcid.org/0009-0003-2385-5263) |
+| Richar Andre Vilca-Solorzano | [<img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" width="14" alt="ORCID iD"> 0009-0003-2385-5263](https://orcid.org/0009-0003-2385-5263) |
 
 <sub>\* Corresponding author — <lcoyla@unap.edu.pe></sub>
 
@@ -316,22 +321,24 @@ Altiplano de Puno, Peru. Listed in the order of the manuscript.
 
 ## Citation
 
-The article is under review. Until it appears, please cite this repository:
-
 ```bibtex
-@misc{CoylaIdme2026Altiplano,
-  title  = {Multiple linear regression outperforms machine learning for monthly
-            temperature forecasting across the Peruvian Altiplano},
-  author = {Coyla-Idme, Leonel and
-            Ruiz Roque-Mamani, Vidman and
-            Suni-Morales, Smit Alexander and
-            Salcca-Lagar, Keysi and
-            Arias-Ram{\'i}rez, Alex and
-            Flores-Nina, Antony Jhonatan and
-            Vilca-Solorzano, Richar Andre},
-  year   = {2026},
-  note   = {Manuscript under review},
-  url    = {https://github.com/Andre031222/monthly-temperature-forecasting-altiplano}
+@article{CoylaIdme2026Altiplano,
+  title   = {Multiple Linear Regression Outperforms Machine Learning for Monthly
+             Temperature Forecasting across the Peruvian Altiplano},
+  author  = {Coyla-Idme, Leonel and
+             Ruis Roque-Mamani, Vidman and
+             Suni-Morales, Smit Alexander and
+             Salcca-Lagar, Keysi and
+             Arias-Ram{\'i}rez, Alex and
+             Flores-Nina, Antony Jhonatan and
+             Vilca-Solorzano, Richar Andre},
+  journal = {World Journal of Environmental Biosciences},
+  volume  = {15},
+  number  = {3},
+  pages   = {102--112},
+  year    = {2026},
+  issn    = {2277-8047},
+  doi     = {10.51847/zMqqEu22RP}
 }
 ```
 
@@ -357,6 +364,7 @@ The article is under review. Until it appears, please cite this repository:
 
 ## License
 
-Code, data and documentation: **CC BY 4.0**, see [LICENSE](LICENSE).
-NASA POWER data is in the public domain. The SENAMHI station record is reproduced here
-for verification of the published analysis.
+Code, data and documentation in this repository: **CC BY 4.0**, see [LICENSE](LICENSE).
+The published article is distributed by the journal under **CC BY-NC-SA 4.0** and belongs
+to *World Journal of Environmental Biosciences*. NASA POWER data is in the public domain;
+the SENAMHI station record is reproduced here for verification of the published analysis.
